@@ -65,4 +65,76 @@ public class TeacherPage {
     @FindBy(xpath = "//div[.='Required']")
     public WebElement verifyInfoNoteRequired;
 
+
+
+
+
+
+
+
+
+
+
+
+
+    //Mertcan
+    //TC_01
+    @FindBy(xpath = "//a[@href='/login']")
+    public WebElement login_MM_;
+    @FindBy(xpath = "//input[@id='username']")
+    public WebElement userName_MM_;
+    @FindBy(xpath = "//input[@id='password']")
+    public WebElement password_MM_;
+    @FindBy(xpath = "//button[.='Login']")
+    public WebElement loginbutton_MM_;
+    @FindBy(xpath = "//span[.='teachermartin")
+    public WebElement verifyUsername_MM_;
+    //TC_02-TC_03
+    @FindBy(xpath = "//button[.='Menu']")
+    public WebElement menuButton_MM_;
+    @FindBy(xpath = "//a[.='Meet Management']")
+    public WebElement meetmanagement_MM_;
+    @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[1]")
+    public WebElement studentName_MM_;
+    @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[2]")
+    public WebElement meetingDate_MM_;
+    @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[3]")
+    public WebElement startTime_MM_;
+    @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[4]")
+    public WebElement stopTime_MM_;
+    @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[5]")
+    public WebElement description_MM_;
+    @FindBy(xpath = "//button[.='  Edit']")
+    public WebElement editButton_MM_;
+    @FindBy(xpath = "//div[@aria-label='Remove Aa12 Aa12']")
+    public WebElement deletestudent_MM_;
+    @FindBy(xpath = "//div[.='Select Students02']")
+    public WebElement selectstudent_MM_;
+    @FindBy(xpath = "//div[.='Aaaa12 Aaaa12']")
+    public WebElement addnewstudent_MM_;
+    @FindBy(xpath = "(//input[@id='date'])[2]")
+    public WebElement dateofmeet_MM_;
+    @FindBy(xpath = "(//input[@id='startTime'])[2]")
+    public WebElement changedstarttime_MM_;
+    @FindBy(xpath = "(//input[@id='stopTime'])[2]")
+    public WebElement changedstoptime_MM_;
+    @FindBy(xpath = "(//input[@id='description'])[2]")
+    public WebElement changedescp_MM_;
+    @FindBy(xpath = "(//button[.='Submit'])[2]")
+    public WebElement changedsubmitb_MM_;
+    @FindBy(xpath = "(//button[@aria-label='Close'])[3]")
+    public WebElement closebutton_MM_;
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

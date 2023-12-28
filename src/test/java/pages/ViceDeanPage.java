@@ -170,6 +170,51 @@ public class ViceDeanPage {
 
 
 
+    //Mertcan
+    //TC_01
+    @FindBy(xpath = "//a[@href='/login']")
+    public WebElement login_MM;
+    @FindBy(xpath = "//input[@id='username']")
+    public WebElement userName_MM;
+    @FindBy(xpath = "//input[@id='password']")
+    public WebElement password_MM;
+    @FindBy(xpath = "//button[.='Login']")
+    public WebElement loginbutton_MM;
+    @FindBy(xpath = "//span[.='TonyStark123")
+    public WebElement verifyUsername_MM;
+    //TC_02
+    @FindBy(xpath = "//button[.='Menu']")
+    public WebElement menuButton_MM;
+    @FindBy(xpath = "//a[.='Lesson Management']")
+    public WebElement lessonmanagament_MM;
+    @FindBy(xpath ="//button[.='Lesson Program']")
+    public WebElement lessonProgram_MM;
+    @FindBy(xpath = "//div[.='Select lesson']")
+    public WebElement chooselessonbutton_MM;
+    @FindBy(xpath = "//div[.='Java']")
+    public WebElement java_MM;
+    //TC_03
+    @FindBy(xpath = "(//option[.='Choose Education Term'])[2]")
+    public WebElement chooseeducationterm_MM;
+    @FindBy(xpath = "(//option[.='FALL_SEMESTER'])[1]")
+    public WebElement semesterselected_MM;
+    @FindBy(xpath = "//option[.='Choose Day']")
+    public WebElement chooseday_MM;
+    @FindBy(xpath ="//option[.='FRIDAY']")
+    public WebElement fridayselected_MM;
+    @FindBy(xpath = "//input[@id='startTime']")
+    public WebElement starttime_MM;
+    @FindBy(xpath = "//input[@id='stopTime']")
+    public WebElement stoptime_MM;
+    @FindBy(xpath ="(//button[.='Submit'])[3]")
+    public WebElement submitButtonlesprog_MM;
+
+
+
+
+
+
+
 
 
 
