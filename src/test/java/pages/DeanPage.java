@@ -12,10 +12,6 @@ public class DeanPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
-
-
-
     //AHMET 13-60
     @FindBy(xpath = "//a[@href='/login']")
     public WebElement signIn;
@@ -58,4 +54,6 @@ public class DeanPage {
     public WebElement verifySubject;
     @FindBy(xpath = "//th[.='Message']")
     public WebElement verifyMessage;
+
+
 }

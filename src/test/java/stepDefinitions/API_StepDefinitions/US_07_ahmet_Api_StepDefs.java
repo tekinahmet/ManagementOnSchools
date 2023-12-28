@@ -18,7 +18,7 @@ public class US_07_ahmet_Api_StepDefs {
         spec.pathParams("first","contactMessages","second","getAll").
                 queryParams("size","1000");
         response= given(spec).get("{first}/{second}");
-        response.prettyPrint();
+//        response.prettyPrint();
     }
     @Then("verify body_07 {string}, {string}, {string}, {string}, {string}")
     public void verify_body_07(String name, String email, String subject, String message, String date) {
