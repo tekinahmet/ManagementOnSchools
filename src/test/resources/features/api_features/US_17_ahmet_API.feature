@@ -1,11 +1,14 @@
 @API_US_17
 Feature: Teacher should add student info
+
+  @API_US_17_TC_01
   Scenario: Test to add student info
-    Given the URL is configured for Add Student Info
-    And the payload is configured for Add Student Info
-    When a POST request for Add Student Info is sent, and the response is received
-    Then verify that the status code is 200
-    And verify that the response for Add Student Info is valid
+    Given set the url and authorize
+    And set expected data for Add Student Info
+    When send put request and get response
+    Then verify response body
+    And verify status code is 200
+
 
   Scenario: Test to retrieve registered Student Info
     Given the ID of a registered Student Info is obtained

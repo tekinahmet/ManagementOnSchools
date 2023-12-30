@@ -11,7 +11,7 @@ public class BaseUrl {
    public static void setup(String username, String password) {
        spec = new RequestSpecBuilder()
                .setBaseUri("https://managementonschools.com/app")
-               .addHeader("Authorization", generateToken("HakanKaya3", "HakanKaya123"))
+               .addHeader("Authorization", generateToken(username, password))
                .setContentType(ContentType.JSON)
                .build();
    }
