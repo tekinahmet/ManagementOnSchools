@@ -1,6 +1,7 @@
 package utilities;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
@@ -15,12 +16,13 @@ public class ConfigReader {
             properties = new Properties();
             properties.load(fileInputStream);
             fileInputStream.close();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     //    this method accepts KEY returns VALUE. Eg :ConfigReader.getProperty(amazon_url); => https://www.amazon.com
-    public static String getProperty(String key){
+    public static String getProperty(String key) {
         String value = properties.getProperty(key);
         return value;
     }
