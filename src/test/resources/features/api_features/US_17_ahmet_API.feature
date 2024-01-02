@@ -1,7 +1,6 @@
 @US_17_ahmet_API
 Feature: Teacher should add student info
 
-  @API_US_17_TC_01
   Scenario: Test to add student info
     Given set the url and authorize
     And set expected data for Add Student Info
