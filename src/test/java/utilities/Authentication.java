@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.given;
 
 public class Authentication {
     public static void main(String[] args) {
-        System.out.println("generateToken = " + generateToken("teacherjack", "Sparrow123"));
+        System.out.println("generateToken = " + generateToken("HakanKaya3", "HakanKaya123"));
     }
 
     public static String generateToken(String username, String password){

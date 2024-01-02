@@ -16,7 +16,7 @@ public class US_07_ahmet_Api_StepDefs {
     Response response;
     @Given("set the url T")
     public void set_the_url_t() {
-        setup(ConfigReader.getProperty("HakanKaya3"),ConfigReader.getProperty("HakanKaya123"));
+        setup("HakanKaya3", "HakanKaya123");
         spec.pathParams("first","contactMessages","second","getAll").
                 queryParams("size","1000");
     }
