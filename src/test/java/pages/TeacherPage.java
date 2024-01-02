@@ -66,6 +66,7 @@ public class TeacherPage {
     public WebElement verifyInfoNoteRequired;
 
 
+
     //MERTCAN 69-115
     //TC_01
     @FindBy(xpath = "//a[@href='/login']")
@@ -113,8 +114,6 @@ public class TeacherPage {
     public WebElement changedsubmitb_MM;
     @FindBy(xpath = "(//button[@aria-label='Close'])[3]")
     public WebElement closebutton_MM;
-
-
 
 
 

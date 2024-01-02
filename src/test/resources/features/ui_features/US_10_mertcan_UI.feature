@@ -10,7 +10,10 @@ Feature: US_10 Vice Deans should be able to create a lesson schedule.
     And   enter name "TonyStark123"_MM
     And   submit password "TonyStark123"_MM
     And   click login button_MM
+
     Then verify user logged in_MM
+
+
 
 
 
