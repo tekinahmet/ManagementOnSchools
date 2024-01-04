@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ManagementonSchools_Team03" />
         <module name="ManagementOnSchool_SuccessTeam" />
+        <module name="ManagementOnSchools" />
       </profile>
     </annotationProcessing>
   </component>

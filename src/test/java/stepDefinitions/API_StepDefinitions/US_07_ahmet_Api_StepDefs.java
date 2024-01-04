@@ -3,9 +3,7 @@ package stepDefinitions.API_StepDefinitions;
 import io.cucumber.java.en.*;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import utilities.ConfigReader;
 
-import java.util.Optional;
 
 import static baseUrl.BaseUrl.setup;
 import static baseUrl.BaseUrl.spec;
