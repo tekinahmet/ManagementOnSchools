@@ -18,9 +18,14 @@ public class US_04_Melik_UI_StepDefs {
     AdminPage adminPage_MS = new AdminPage();
     DeanPage deanPage_MS = new DeanPage();
 
+    public static String surname_MS;
     public static String userName_MS;
     public static String password_MS;
     public static String firstName_MS;
+
+    public static String phoneNumber_MS;
+    public static String birthPlace_MS;
+    public static String ssnNumber_MS;
 
     @Given("User navigates to the_MS {string}")
     public void user_navigates_to_the_ms(String url) {
@@ -77,19 +82,21 @@ public class US_04_Melik_UI_StepDefs {
 
         firstName_MS = Faker.instance().name().firstName();
         deanPage_MS.name_MS.click();
-        deanPage_MS.name_MS.sendKeys(Faker.instance().name().firstName());
+        deanPage_MS.name_MS.sendKeys(firstName_MS);
 
     }
     @When("User enters the surname_MS {string}")
     public void user_enters_the_surname_ms(String surname) {
 
-        deanPage_MS.surname_MS.sendKeys(Faker.instance().name().lastName());
+        surname_MS = Faker.instance().name().lastName();
+        deanPage_MS.surname_MS.sendKeys(surname_MS);
 
     }
     @When("User enters Birth Place_MS {string}")
     public void user_enters_birth_place_ms(String BirthPlace) {
 
-        deanPage_MS.birthPlace_MS.sendKeys(Faker.instance().address().city());
+        birthPlace_MS = Faker.instance().address().city();
+        deanPage_MS.birthPlace_MS.sendKeys(birthPlace_MS);
 
     }
     @When("User clicks the Male in the gender_MS")
@@ -103,23 +110,24 @@ public class US_04_Melik_UI_StepDefs {
     @When("User enters the Date of Birth_MS")
     public void user_enters_the_date_of_birth_ms() {
 
-        deanPage_MS.DateOfBirth_MS.sendKeys("11021995");
+        deanPage_MS.DateOfBirth_MS.sendKeys("11111995");
 
     }
 
     @When("User enters the phone number_MS {string} as xxx-xxx-xxxx")
     public void user_enters_the_phone_number_ms_as_xxx_xxx_xxxx(String string) {
 
-
-        deanPage_MS.phoneNumber_MS.sendKeys(""+Faker.instance().number().digits(3)+
-                "-"+Faker.instance().number().digits(3)+"-"+Faker.instance().number().digits(4));
+        phoneNumber_MS = ""+Faker.instance().number().digits(3)+
+                "-"+Faker.instance().number().digits(3)+"-"+Faker.instance().number().digits(4);
+        deanPage_MS.phoneNumber_MS.sendKeys(phoneNumber_MS);
 
     }
     @When("User enters the Ssn Number_MS {string} as xxx-xx-xxxx")
     public void user_enters_the_ssn_number_ms_as_xxx_xx_xxxx(String string) {
 
-        deanPage_MS.ssnNumber_MS.sendKeys(""+Faker.instance().number().digits(3)+
-                "-"+Faker.instance().number().digits(2)+"-"+Faker.instance().number().digits(4));
+        ssnNumber_MS = ""+Faker.instance().number().digits(3)+
+                "-"+Faker.instance().number().digits(2)+"-"+Faker.instance().number().digits(4);
+        deanPage_MS.ssnNumber_MS.sendKeys(ssnNumber_MS);
 
     }
 
