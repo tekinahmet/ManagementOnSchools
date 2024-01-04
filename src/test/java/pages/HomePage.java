@@ -192,3 +192,8 @@ public class HomePage {
 
 
 }
+
+    @FindBy(xpath = "//a[@href='/login']")
+    public WebElement loginSY;
+}
+

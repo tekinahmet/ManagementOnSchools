@@ -6,57 +6,279 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class ViceDeanPage {
-    public ViceDeanPage() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
+   public ViceDeanPage() {
+      PageFactory.initElements(Driver.getDriver(), this);
+   }
 
 
 
-    //Mertcan
-    //TC_01
+
+
+
+
+    //ZEYNEP 19-77
+
     @FindBy(xpath = "//a[@href='/login']")
-    public WebElement login_MM;
+    public WebElement loginzz;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   //Mertcan 173-213
+   //US_10_mertcan
+   //TC_01
+   @FindBy(xpath = "//a[@href='/login']")
+   public WebElement loginMM;
+   @FindBy(xpath = "//input[@id='username']")
+   public WebElement userNameMM;
+   @FindBy(xpath = "//input[@id='password']")
+   public WebElement passwordMM;
+   @FindBy(xpath = "//button[.='Login']")
+   public WebElement loginbuttonMM;
+   @FindBy(xpath = "//span[.='TonyStark123")
+   public WebElement verifyUsernameMM;
+
+   //TC_02
+   @FindBy(xpath = "//button[.='Menu']")
+   public WebElement menuButtonMM;
+   @FindBy(xpath = "//a[.='Lesson Management']")
+   public WebElement lessonmanagamentMM;
+   @FindBy(xpath ="//button[.='Lesson Program']")
+   public WebElement lessonProgramMM;
+   @FindBy(xpath = "//div[.='Select lesson']")
+   public WebElement chooselessonbuttonMM;
+   @FindBy(xpath = "//div[.='Java']")
+   public WebElement javaMM;
+
+   //TC_03
+   @FindBy(xpath = "(//option[.='Choose Education Term'])[2]")
+   public WebElement chooseeducationtermMM;
+   @FindBy(xpath = "(//option[.='FALL_SEMESTER'])[1]")
+   public WebElement semesterselectedMM;
+   @FindBy(xpath = "//option[.='Choose Day']")
+   public WebElement choosedayMM;
+   @FindBy(xpath ="//option[.='FRIDAY']")
+   public WebElement fridayselectedMM;
+   @FindBy(xpath = "//input[@id='startTime']")
+   public WebElement starttimeMM;
+   @FindBy(xpath = "//input[@id='stopTime']")
+   public WebElement stoptimeMM;
+   @FindBy(xpath ="(//button[.='Submit'])[3]")
+   public WebElement submitButtonlesprogMM;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @FindBy(xpath = "//input[@id='username']")
-    public WebElement userName_MM;
+    public WebElement usernamezz;
+
     @FindBy(xpath = "//input[@id='password']")
-    public WebElement password_MM;
-    @FindBy(xpath = "//button[.='Login']")
-    public WebElement loginbutton_MM;
-    @FindBy(xpath = "//span[.='TonyStark123")
-    public WebElement verifyUsername_MM;
-    //TC_02
+    public WebElement passwordzz;
+
+    @FindBy(xpath = "(//button[@type='button'])[3]")
+    public WebElement loginButtonzz;
     @FindBy(xpath = "//button[.='Menu']")
-    public WebElement menuButton_MM;
-    @FindBy(xpath = "//a[.='Lesson Management']")
-    public WebElement lessonmanagament_MM;
-    @FindBy(xpath ="//button[.='Lesson Program']")
-    public WebElement lessonProgram_MM;
-    @FindBy(xpath = "//div[.='Select lesson']")
-    public WebElement chooselessonbutton_MM;
-    @FindBy(xpath = "//div[.='Java']")
-    public WebElement java_MM;
-    //TC_03
-    @FindBy(xpath = "(//option[.='Choose Education Term'])[2]")
-    public WebElement chooseeducationterm_MM;
-    @FindBy(xpath = "(//option[.='FALL_SEMESTER'])[1]")
-    public WebElement semesterselected_MM;
-    @FindBy(xpath = "//option[.='Choose Day']")
-    public WebElement chooseday_MM;
-    @FindBy(xpath ="//option[.='FRIDAY']")
-    public WebElement fridayselected_MM;
-    @FindBy(xpath = "//input[@id='startTime']")
-    public WebElement starttime_MM;
-    @FindBy(xpath = "//input[@id='stopTime']")
-    public WebElement stoptime_MM;
-    @FindBy(xpath ="(//button[.='Submit'])[3]")
-    public WebElement submitButtonlesprog_MM;
+    public WebElement menuButtonzz;
+    @FindBy(xpath = "/html/body/div[3]/div[2]/div/a[3]")
+    public WebElement studentManagementzz;
 
+    //TC_01
 
+    @FindBy (xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[1]/div[1]/select")
+    public WebElement chooseTeacherzz;
+    @FindBy (xpath ="/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[1]/div[2]/div/input")
+    public WebElement nameFieldzz;
 
+    @FindBy (xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[1]/div[3]/div/input")
+    public  WebElement surnameFieldzz;
+    @FindBy (xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[2]/div[1]/div/input")
+    public  WebElement birthPlaceFieldzz;
+    @FindBy (xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[2]/div[2]/div/input")
+    public  WebElement emailFieldzz;
+    @FindBy (xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[2]/div[3]/div/input")
+    public  WebElement phoneNumberFieldzz;
+    @FindBy (xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[2]/div[4]/div/div[1]/div/input")
+    public  WebElement genderSelectzz;
+    @FindBy (xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[2]/div[5]/div/input")
+    public  WebElement dateOfBirthzz;
+    @FindBy (xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[3]/div[1]/div/input")
+    public  WebElement ssnNumberFieldzz;
+    @FindBy(xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[3]/div[2]/div/input")
+    public WebElement usernameFieldzz;
+    @FindBy(xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[3]/div[3]/div/input")
+    public WebElement fatherNameFieldzz;
+    @FindBy(xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[3]/div[4]/div/input")
+    public WebElement motherNameFieldzz;
+    @FindBy(xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[3]/div[5]/div/input")
+    public WebElement passwordFieldzz;
+    @FindBy(xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[3]/div[6]/div/button")
+    public WebElement submitButtonzz;
 
+    @FindBy(xpath = "/html/body/div/div/main/div/div[1]/div[2]/div/div/form/div[1]/div[2]/div/div")
+    public WebElement invalidMessagezz;
 
+    @FindBy(xpath ="//div[.='Please enter valid SSN number']")
+    public WebElement ssnAlertMessagezz;
 
 
+    @FindBy(xpath = "//div[.='Student saved Successfully']")
+    public WebElement savedStudentAlertMessagezz;
 
 
 
@@ -106,75 +328,6 @@ public class ViceDeanPage {
 
 
 
-    //Durdygul 201-300
-    @FindBy(xpath = "//a[@href='/login']")
-    public WebElement loginButton_DB;
-    @FindBy(xpath = "//input[@id='username']")
-    public WebElement loginUserNameBox_DB;
-    @FindBy(xpath = "(//button[@type='button'])[1]")
-    public WebElement menuButton_DB;
-    @FindBy(xpath = "//a[text()='Student Management']")
-    public WebElement studentManagement_DB;
-    @FindBy(css= "select[class='form-select']")
-    public WebElement chooseTeacher_DB;
-    @FindBy(css= "#name")
-    public WebElement nameBox_DB;
-    @FindBy(css= "input#surname")
-    public WebElement sunameBox_DB;
-    @FindBy(css= "input#birthPlace")
-    public WebElement birthPlaceBox_DB;
-    @FindBy(css= "input#email")
-    public WebElement emailBox_DB;
-    @FindBy(css= "input#phoneNumber")
-    public WebElement phoneNumberBox_DB;
-    @FindBy(css= "input#birthDay")
-    public WebElement birthDayBox_DB;
-    @FindBy(css= "input#ssn")
-    public WebElement ssnBox_DB;
-    @FindBy(css= "input#username")
-    public WebElement usernameBox_DB;
-    @FindBy(css= "input#fatherName")
-    public WebElement fatherNameBox_DB;
-    @FindBy(css= "input#motherName")
-    public WebElement motherNameBox_DB;
-    @FindBy(css= "input#password")
-    public WebElement passwordBox_DB;
-    @FindBy(xpath= "//button[@class='fw-semibold btn btn-primary btn-lg']")
-    public WebElement submitButton_DB;
-    @FindBy(xpath= "(//input[@name='gender'])[1]")
-    public WebElement femaleRadioButton_DB;
-    @FindBy(xpath= "(//input[@name='gender'])[2]")
-    public WebElement maleRadioButton_DB;
-    @FindBy(xpath= "//div[text()='Student saved Successfully']")
-    public WebElement studentVerify_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[1]") //(//div[text()='Required'])[1]
-    public WebElement requiredName_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[2]")
-    public WebElement requiredSurname_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[3]")
-    public WebElement requiredBirthPlace_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[4]")
-    public WebElement requiredEmail_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[5]")
-    public WebElement requiredPhone_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[6]")
-    public WebElement requiredDateOfBrith_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[7]")
-    public WebElement requiredSsn_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[8]")
-    public WebElement requiredUserName_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[9]")
-    public WebElement requiredFatherName_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[10]")
-    public WebElement requiredMotherName_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[11]")
-    public WebElement requiredPassword_DB;
-    @FindBy(xpath= "//div[text()='You have entered an invalid value. Valid values are: MALE, FEMALE']")
-    public WebElement assertGender_DB;
-    @FindBy(xpath = "//div[@class='Toastify__toast-body']")
-    public WebElement ssnHataYazisi_DB;
-    @FindBy(xpath = "//div[@class='Toastify__toast-body']")
-    public WebElement ssnAlreadyRegisterYazisi_DB;
 
 
 
@@ -188,5 +341,99 @@ public class ViceDeanPage {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   //Fatma Karmis
+   @FindBy(xpath = "(//button[@aria-label='Toggle navigation'])[1]")
+   public WebElement menuButtonFK;
+
+
+   @FindBy(linkText = "Vice Dean Management")
+   public WebElement viceDeanFK;
+
+
+   @FindBy(xpath = "(//h5[@bg='primary'])[1]")
+   public WebElement addViceDeanFK;
+
+
+   @FindBy(xpath = "//input[@placeholder='Name']")
+   public WebElement nameInputFK;
+
+   @FindBy(xpath = "//input[@placeholder='Surname']")
+   public WebElement surnameInputFK;
+
+
+   @FindBy(xpath = "//input[@placeholder='Birth Place']")
+   public WebElement birthPlaceFK;
+
+
+   @FindBy(xpath = "//input[@value='MALE']")
+   public WebElement maleGenderFK;
+
+
+   @FindBy(xpath = "//input[@type='date']")
+   public WebElement dateFK;
+
+   @FindBy(id = "phoneNumber")
+   public WebElement phoneNoFK;
+
+   @FindBy(id = "ssn")
+   public WebElement ssnFK;
+
+   @FindBy(id = "username")
+   public WebElement usernameFK;
+
+   @FindBy(id = "password")
+   public WebElement passwordFK;
+
+   @FindBy(xpath = "//button[@class='fw-semibold btn btn-primary btn-lg']")
+   public WebElement submitButtonFK;
+
+
+   @FindBy(xpath = "//div[.='Vice Dean Saved']")
+   public WebElement viceDeanSavedFK;
+
+
+   @FindBy(xpath = "(//div[@class=\"invalid-feedback\"])[1]")
+   public WebElement requiredMessage1FK;
+
+   @FindBy(xpath = "(//div[@class=\"invalid-feedback\"])[2]")
+   public WebElement requiredMessage2FK;
+
+   @FindBy(xpath = "(//div[@class=\"invalid-feedback\"])[3]")
+   public WebElement requiredMessage3FK;
+
+
+   @FindBy(xpath = "(//div[@class=\"invalid-feedback\"])[4]")
+   public WebElement requiredMessage4FK;
+
+
+   @FindBy(xpath = "(//div[@class=\"invalid-feedback\"])[5]")
+   public WebElement requiredMessage5FK;
+
+
+   @FindBy(xpath = "(//div[@class=\"invalid-feedback\"])[6]")
+   public WebElement requiredMessage6FK; //min 11 char for ssn
+
+   @FindBy(xpath = "(//div[@class=\"invalid-feedback\"])[7]")
+   public WebElement requiredMessage7FK;
+
+
+   @FindBy(xpath = "(//div[@class=\"invalid-feedback\"])[8]")
+   public WebElement requiredMessage8FK;
+
+//Fatma Karmis
 
 }
