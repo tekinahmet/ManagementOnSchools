@@ -15,10 +15,10 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = false,//makes the console reports more readable
-        features = "./src/test/resources/features/api_features",//path of the features folder
-        glue = {"stepDefinitions/API_StepDefinitions","hooks"},//path of the stepdefinitions folder
+        features = "./src/test/resources/features",//path of the features folder
+        glue = {"stepDefinitions","hooks"},//path of the stepdefinitions folder
         dryRun = false, //generate the missing step definitions only. Do not run the existing step definitions
-        tags = "@US_07_ahmet_API"
+        tags = "@US_17_ahmet_e2e"
 )
-public class Runner_API {
+public class Runner {
 }
