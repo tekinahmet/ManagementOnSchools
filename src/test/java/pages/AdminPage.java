@@ -11,8 +11,15 @@ public class AdminPage {
     public AdminPage() {PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    //Melik 14-30
+    @FindBy(xpath = "//*[.='Menu']")
+    public WebElement menuButton_MS;
 
+    @FindBy(partialLinkText = "Dean Management")
+    public WebElement deanManagement_MS;
 
+    @FindBy(partialLinkText = "Teacher Management")
+    public WebElement teacherManagement_MS;
 
 
 

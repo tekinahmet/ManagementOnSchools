@@ -140,4 +140,79 @@ public class TeacherPage {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Melik 180-215
+    @FindBy(xpath = "//h5[.='Add Teacher']")
+    public WebElement teacherText_MS;
+
+    @FindBy(xpath = "(//input)[14]")
+    public WebElement chooseLessons_MS;
+
+    @FindBy(id = "name")
+    public WebElement name;
+
+    @FindBy(xpath = "//tbody[@class='table-group-divider']//tr[18]//td[4]")
+    public WebElement verifyTeacherCreated_MS;
+
+    @FindBy(xpath = "(//span//button[@type='button'])[18]")
+    public WebElement editButton_MS;
+
+    @FindBy(xpath = "//div[.='Teacher updated Successful']")
+    public WebElement alertForUpdated_MS;
+
+    @FindBy(xpath = "//*[@class='form-control is-invalid']")
+    public WebElement passwordforTeacher_MS;
+
+    @FindBy(xpath = "(//*[@class='form-check-input'])[4]")
+    public WebElement advisorTeacher_MS;
+
+    @FindBy(xpath = "(//*[@class='fw-semibold btn btn-primary btn-lg'])[2]")
+    public WebElement submitButtonForTeacher_MS;
+
+
+
+
+
+
+
+
 }

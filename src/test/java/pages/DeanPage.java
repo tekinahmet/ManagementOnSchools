@@ -57,6 +57,78 @@ public class DeanPage {
 
 
 
+
+
+
+
+
+    //Melik 65-140
+    @FindBy(xpath = "//*[text()='Add Dean']")
+    public WebElement addDeanText_MS;
+
+    @FindBy(id = "name")
+    public WebElement name_MS;
+
+    @FindBy(id = "surname")
+    public WebElement surname_MS;
+
+    @FindBy(id = "birthPlace")
+    public WebElement birthPlace_MS;
+
+    @FindBy(xpath = "//input[@value='MALE']")
+    public WebElement male_MS;
+
+    @FindBy(xpath = "//body//div[contains(@role,'dialog')]//div[contains(@class,'row')]//div[contains(@class,'row')]//div[1]//div[1]//input[1]")
+    public WebElement female_MS;
+
+    @FindBy(xpath = "//input[@type='date']")
+    public WebElement DateOfBirth_MS;
+
+    @FindBy(id = "phoneNumber")
+    public WebElement phoneNumber_MS;
+
+    @FindBy(id = "ssn")
+    public WebElement ssnNumber_MS;
+
+    @FindBy(id = "username")
+    public WebElement username_MS;
+
+    @FindBy(id = "password")
+    public WebElement password_MS;
+
+    @FindBy(xpath = "//button[.='Submit']")
+    public WebElement submitButton_MS;
+
+    @FindBy(xpath = "//div[.='Dean Saved']")
+    public WebElement alertForDean_MS;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[1]")
+    public WebElement verifyName_MS;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[2]")
+    public WebElement verifySurname_MS;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[3]")
+    public WebElement verifyBirthPlace_MS;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[4]")
+    public WebElement verifyDateOfBirth_MS;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[5]")
+    public WebElement verifyPhoneNumber_MS;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[6]")
+    public WebElement verifySsnNumber_MS;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[7]")
+    public WebElement verifyUserName_MS;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[8]")
+    public WebElement verifyPassword_MS;
+
+    @FindBy(xpath = "//div[.='Please enter valid SSN number']")
+    public WebElement alertForSsn_MS;
+
     //ZEYNEP 63-133
 
     @FindBy(xpath = "//a[@href='/login']")
@@ -128,6 +200,7 @@ public class DeanPage {
 
     @FindBy(xpath = "//div[.='Dean updated Successful']")
     public WebElement verifyMessagez;
+
 
 
 }
