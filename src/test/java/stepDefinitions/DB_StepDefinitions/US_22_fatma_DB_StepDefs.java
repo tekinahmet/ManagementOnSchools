@@ -3,7 +3,6 @@ package stepDefinitions.DB_StepDefinitions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import junit.framework.TestCase;
-import test_data.TestData;
 
 import java.sql.*;
 

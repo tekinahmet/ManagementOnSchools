@@ -1,7 +1,7 @@
 package stepDefinitions.UI_StepDefinitions;
 
 import io.cucumber.java.en.Then;
-import pages.HomePage;
+
 import pages.ViceDeanPage;
 
 import static org.junit.Assert.assertTrue;
