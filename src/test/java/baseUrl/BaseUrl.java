@@ -15,4 +15,6 @@ public class BaseUrl {
                .setContentType(ContentType.JSON)
                .build();
    }
+
 }
+

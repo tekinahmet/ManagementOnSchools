@@ -16,15 +16,16 @@ public class DBUtils {
      * DBUtils.createConnection(); -> to connect to teh database
      */
     public static void createConnection() {
-        String url = "jdbc:postgresql://157.230.48.97:5432/gmibank_db";
-        String username="techprodb_user";
-        String password="Techpro_@126";
+        String url = "jdbc:postgresql://managementonschools.com:5432/school_management";
+        String username="select_user";
+        String password="43w5ijfso";
         try {
             connection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+
     }
     /**
      * DBUtils.executeQuery(String query); -> Execute the query and store is the result set object

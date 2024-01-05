@@ -323,10 +323,36 @@ public class ViceDeanPage {
 
 
 
+// Sibel Start Point *************************************
+    @FindBy(xpath = "//button[.='Menu']")
+    public WebElement menuSY;
+
+    @FindBy(xpath = "//a[.='Lesson Management']")
+    public WebElement lessonManagementSY;
+
+    @FindBy(xpath = "//button[@id='controlled-tab-example-tab-lessonsList']")
+    public WebElement lessonListSY;
+
+    @FindBy(xpath = "//div[@id='controlled-tab-example-tabpane-lessonsList']//table//tr[2]//td[1]")
+    public WebElement lessonNameOnSecondRowSY;
+
+    @FindBy(xpath = "//div[@id='controlled-tab-example-tabpane-lessonsList']//table//tr[2]//td[2]")
+    public WebElement compulsorySecondRowSY;
 
 
+    @FindBy(xpath = "//div[@id='controlled-tab-example-tabpane-lessonsList']//table//tr[2]//td[3]")
+    public WebElement creditScoreSY;
+
+    @FindBy(xpath = "//button[@class='btn btn-danger']")
+    public WebElement viceDeleteButtonSY;
+    @FindBy(linkText = "Lesson Deleted")
+    public WebElement deletedAlert;
+    @FindBy(linkText = "Update")
+    public WebElement updateButtonSY;
+    // Sibel End Point *******************************************
 
 
+}
 
 
 
@@ -437,3 +463,4 @@ public class ViceDeanPage {
 //Fatma Karmis
 
 }
+

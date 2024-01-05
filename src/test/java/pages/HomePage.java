@@ -16,6 +16,38 @@ public class HomePage {
     public WebElement loginSY;
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //Fatma Karmis
@@ -31,8 +63,8 @@ public class HomePage {
     public WebElement passwordFK;
 
 
+
     @FindBy(xpath = "//button[@class='fw-semibold btn btn-primary']")
     public WebElement loginButtonFK;
 
 
-}
