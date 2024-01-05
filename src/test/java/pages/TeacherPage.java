@@ -65,63 +65,53 @@ public class TeacherPage {
 
 
 
-
-
-
-
-
-
-
-
-
-
-    //Mertcan
+    //MERTCAN 69-115
     //TC_01
     @FindBy(xpath = "//a[@href='/login']")
-    public WebElement login_MM_;
+    public WebElement login_MM;
     @FindBy(xpath = "//input[@id='username']")
-    public WebElement userName_MM_;
+    public WebElement userName_MM;
     @FindBy(xpath = "//input[@id='password']")
-    public WebElement password_MM_;
-    @FindBy(xpath = "//button[.='Login']")
-    public WebElement loginbutton_MM_;
+    public WebElement password_MM;
     @FindBy(xpath = "//span[.='teachermartin")
-    public WebElement verifyUsername_MM_;
+    public WebElement verifyUsername_MM;
+    @FindBy(xpath = "//button[.='Login']")
+    public WebElement loginbutton_MM;
     //TC_02-TC_03
     @FindBy(xpath = "//button[.='Menu']")
-    public WebElement menuButton_MM_;
+    public WebElement menuButton_MM;
     @FindBy(xpath = "//a[.='Meet Management']")
-    public WebElement meetmanagement_MM_;
+    public WebElement meetmanagement_MM;
     @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[1]")
-    public WebElement studentName_MM_;
+    public WebElement studentName_MM;
     @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[2]")
-    public WebElement meetingDate_MM_;
+    public WebElement meetingDate_MM;
     @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[3]")
-    public WebElement startTime_MM_;
+    public WebElement startTime_MM;
     @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[4]")
-    public WebElement stopTime_MM_;
+    public WebElement stopTime_MM;
     @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[5]")
-    public WebElement description_MM_;
+    public WebElement description_MM;
     @FindBy(xpath = "//button[.='  Edit']")
-    public WebElement editButton_MM_;
+    public WebElement editButton_MM;
     @FindBy(xpath = "//div[@aria-label='Remove Aa12 Aa12']")
-    public WebElement deletestudent_MM_;
+    public WebElement deletestudent_MM;
     @FindBy(xpath = "//div[.='Select Students02']")
-    public WebElement selectstudent_MM_;
+    public WebElement selectstudent_MM;
     @FindBy(xpath = "//div[.='Aaaa12 Aaaa12']")
-    public WebElement addnewstudent_MM_;
+    public WebElement addnewstudent_MM;
     @FindBy(xpath = "(//input[@id='date'])[2]")
-    public WebElement dateofmeet_MM_;
+    public WebElement dateofmeet_MM;
     @FindBy(xpath = "(//input[@id='startTime'])[2]")
-    public WebElement changedstarttime_MM_;
+    public WebElement changedstarttime_MM;
     @FindBy(xpath = "(//input[@id='stopTime'])[2]")
-    public WebElement changedstoptime_MM_;
+    public WebElement changedstoptime_MM;
     @FindBy(xpath = "(//input[@id='description'])[2]")
-    public WebElement changedescp_MM_;
+    public WebElement changedescp_MM;
     @FindBy(xpath = "(//button[.='Submit'])[2]")
-    public WebElement changedsubmitb_MM_;
+    public WebElement changedsubmitb_MM;
     @FindBy(xpath = "(//button[@aria-label='Close'])[3]")
-    public WebElement closebutton_MM_;
+    public WebElement closebutton_MM;
 
 
     //Sibel // ** start point  *****
@@ -171,5 +161,93 @@ public class TeacherPage {
     public WebElement invalidTimeMessageSY;
 
     // Sibel End Point // ******************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Melik 180-215
+    @FindBy(xpath = "//h5[.='Add Teacher']")
+    public WebElement teacherText_MS;
+
+    @FindBy(xpath = "(//input)[14]")
+    public WebElement chooseLessons_MS;
+
+    @FindBy(id = "name")
+    public WebElement name;
+
+    @FindBy(xpath = "//tbody[@class='table-group-divider']//tr[18]//td[4]")
+    public WebElement verifyTeacherCreated_MS;
+
+    @FindBy(xpath = "(//span//button[@type='button'])[18]")
+    public WebElement editButton_MS;
+
+    @FindBy(xpath = "//div[.='Teacher updated Successful']")
+    public WebElement alertForUpdated_MS;
+
+    @FindBy(xpath = "//*[@class='form-control is-invalid']")
+    public WebElement passwordforTeacher_MS;
+
+    @FindBy(xpath = "(//*[@class='form-check-input'])[4]")
+    public WebElement advisorTeacher_MS;
+
+    @FindBy(xpath = "(//*[@class='fw-semibold btn btn-primary btn-lg'])[2]")
+    public WebElement submitButtonForTeacher_MS;
+
+
+
+
+
+
+
 
 }
