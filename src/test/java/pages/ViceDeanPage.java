@@ -259,92 +259,32 @@ public class ViceDeanPage {
 
 
 
+// Sibel Start Point *************************************
+    @FindBy(xpath = "//button[.='Menu']")
+    public WebElement menuSY;
 
+    @FindBy(xpath = "//a[.='Lesson Management']")
+    public WebElement lessonManagementSY;
 
+    @FindBy(xpath = "//button[@id='controlled-tab-example-tab-lessonsList']")
+    public WebElement lessonListSY;
 
+    @FindBy(xpath = "//div[@id='controlled-tab-example-tabpane-lessonsList']//table//tr[2]//td[1]")
+    public WebElement lessonNameOnSecondRowSY;
 
+    @FindBy(xpath = "//div[@id='controlled-tab-example-tabpane-lessonsList']//table//tr[2]//td[2]")
+    public WebElement compulsorySecondRowSY;
 
-    //Durdygul 201-300
-    @FindBy(xpath = "//a[@href='/login']")
-    public WebElement loginButton_DB;
-    @FindBy(xpath = "//input[@id='username']")
-    public WebElement loginUserNameBox_DB;
-    @FindBy(xpath = "(//button[@type='button'])[1]")
-    public WebElement menuButton_DB;
-    @FindBy(xpath = "//a[text()='Student Management']")
-    public WebElement studentManagement_DB;
-    @FindBy(css= "select[class='form-select']")
-    public WebElement chooseTeacher_DB;
-    @FindBy(css= "#name")
-    public WebElement nameBox_DB;
-    @FindBy(css= "input#surname")
-    public WebElement sunameBox_DB;
-    @FindBy(css= "input#birthPlace")
-    public WebElement birthPlaceBox_DB;
-    @FindBy(css= "input#email")
-    public WebElement emailBox_DB;
-    @FindBy(css= "input#phoneNumber")
-    public WebElement phoneNumberBox_DB;
-    @FindBy(css= "input#birthDay")
-    public WebElement birthDayBox_DB;
-    @FindBy(css= "input#ssn")
-    public WebElement ssnBox_DB;
-    @FindBy(css= "input#username")
-    public WebElement usernameBox_DB;
-    @FindBy(css= "input#fatherName")
-    public WebElement fatherNameBox_DB;
-    @FindBy(css= "input#motherName")
-    public WebElement motherNameBox_DB;
-    @FindBy(css= "input#password")
-    public WebElement passwordBox_DB;
-    @FindBy(xpath= "//button[@class='fw-semibold btn btn-primary btn-lg']")
-    public WebElement submitButton_DB;
-    @FindBy(xpath= "(//input[@name='gender'])[1]")
-    public WebElement femaleRadioButton_DB;
-    @FindBy(xpath= "(//input[@name='gender'])[2]")
-    public WebElement maleRadioButton_DB;
-    @FindBy(xpath= "//div[text()='Student saved Successfully']")
-    public WebElement studentVerify_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[1]") //(//div[text()='Required'])[1]
-    public WebElement requiredName_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[2]")
-    public WebElement requiredSurname_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[3]")
-    public WebElement requiredBirthPlace_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[4]")
-    public WebElement requiredEmail_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[5]")
-    public WebElement requiredPhone_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[6]")
-    public WebElement requiredDateOfBrith_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[7]")
-    public WebElement requiredSsn_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[8]")
-    public WebElement requiredUserName_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[9]")
-    public WebElement requiredFatherName_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[10]")
-    public WebElement requiredMotherName_DB;
-    @FindBy(xpath= "(//div[@class='invalid-feedback'])[11]")
-    public WebElement requiredPassword_DB;
-    @FindBy(xpath= "//div[text()='You have entered an invalid value. Valid values are: MALE, FEMALE']")
-    public WebElement assertGender_DB;
-    @FindBy(xpath = "//div[@class='Toastify__toast-body']")
-    public WebElement ssnHataYazisi_DB;
-    @FindBy(xpath = "//div[@class='Toastify__toast-body']")
-    public WebElement ssnAlreadyRegisterYazisi_DB;
+    @FindBy(xpath = "//div[@id='controlled-tab-example-tabpane-lessonsList']//table//tr[2]//td[3]")
+    public WebElement creditScoreSY;
 
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//button[@class='btn btn-danger']")
+    public WebElement viceDeleteButtonSY;
+    @FindBy(linkText = "Lesson Deleted")
+    public WebElement deletedAlert;
+    @FindBy(linkText = "Update")
+    public WebElement updateButtonSY;
+    // Sibel End Point *******************************************
 
 
 }
