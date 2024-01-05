@@ -5,8 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-import java.util.List;
-
 public class TeacherPage {
     public TeacherPage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -116,16 +114,53 @@ public class TeacherPage {
     public WebElement closebutton_MM;
 
 
+    //Sibel // ** start point  *****
+    //************************************ //
 
+    @FindBy(xpath = "//a[.='Meet Management']")
+    public WebElement meetManagementSY;
 
+    @FindBy(xpath = "//input[@id='react-select-2-input']")
+    public WebElement inputStudentSY;
 
+//    @FindBy(xpath = "//div[@class=' css-1dyz3mf']")
+//    public WebElement multiValue;
 
+    @FindBy(xpath = " //div[@class=' css-19bb58m']")
+    public WebElement selectStudentSY;
+    @FindBy(xpath = "//input[@id='date']")
+    public WebElement dateInputSY;
+    @FindBy(xpath = "//input[@id='startTime']")
+    public WebElement timeInputSY;
+    @FindBy(xpath = "//input[@id='stopTime']")
+    public WebElement stopTimeInputSY;
+    @FindBy(xpath = "//input[@id='description']")
+    public WebElement descriptionInputSY;
+    @FindBy(xpath = "//button[.='Submit']")
+    public WebElement submitButtonSY;
+    @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[1]")
+    public WebElement studentNameOnTheListSY;
+    @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[2]")
+    public WebElement meetingDateOnTheListSY;
+    @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[3]")
+    public WebElement startTimeOnTheListSY;
+    @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[4]")
+    public WebElement stopTimeOnTheListSY;
+    @FindBy(xpath = "//div[@class='table-responsive']//tr[1]//td[5]")
+    public WebElement descriptionOnTheListSY;
 
+    @FindBy(xpath = "//button[.='Menu']")
+    public WebElement menuSY;
+    @FindBy(xpath = "//div[.='Meet Saved Successfully']")
+    public WebElement successMessageSY;
 
+    @FindBy(xpath = "//div[.='must be a future date']")
+    public WebElement invalidDateMessageSY;
 
+    @FindBy(xpath = "//div[.='Error: start time must not be greater than or equal to stop time']")
+    public WebElement invalidTimeMessageSY;
 
-
-
+    // Sibel End Point // ******************************
 
 
 
