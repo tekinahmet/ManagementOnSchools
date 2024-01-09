@@ -1,4 +1,3 @@
-
 package pages;
 
 import org.openqa.selenium.WebElement;
@@ -9,48 +8,7 @@ import utilities.Driver;
 public class HomePage {
     public HomePage() {
         PageFactory.initElements(Driver.getDriver(), this);
-    }
-
-
-    @FindBy(xpath = "//a[@href='/login']")
-    public WebElement loginSY;
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //Fatma Karmis
+      
     @FindBy(xpath = "//a[@class='header_link ms-2']")
     public WebElement loginFK;
 
@@ -63,8 +21,11 @@ public class HomePage {
     public WebElement passwordFK;
 
 
-
     @FindBy(xpath = "//button[@class='fw-semibold btn btn-primary']")
     public WebElement loginButtonFK;
+
+}
+}
+
 
 
